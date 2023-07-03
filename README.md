@@ -27,3 +27,45 @@ To perform the train/test/valid split of your labeled images, follow these steps
 ## Training the Images
 
 To train the images using YOLO, follow the standard procedures for training a YOLO model. This repository focuses on the initial steps of data preparation and does not provide detailed instructions for training the model.
+
+The folder hierarchy should now look like this :
+```
+fasteners/
+├─── test/
+│      ├─── images/
+│      ├─── labels/
+├─── train/
+│      ├─── images/
+│      ├─── labels/
+├─── valid/
+│      ├─── images/
+│      ├─── labels/
+├─── labels.txt
+├─── fasteners.yaml
+
+```
+
+## Labels.txt
+
+Add your classes into the labels.txt file, one class per line. For example,
+```
+nut
+bolt
+```
+
+## .yaml file
+
+This can be renamed to <your_name_here>.yaml. The structure of this file could be as follows (for YOLOv8)
+```
+train: ./train/images
+val: ./valid/images
+test: ./test/images
+
+nc: 2
+names: ['nut', 'bolt']
+```
+
+nc stands for number of classes, in this case 1. 
+names are the names of classes.
+
+you do not really need to change where the image is saved, it should be as above.
