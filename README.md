@@ -18,9 +18,9 @@ The repository includes a cloned version of Yolo_Label, which is a labeling tool
 
 To perform the train/test/valid split of your labeled images, follow these steps:
 
-1. Run the `yolo_slice_sort.py` Python script provided in this repository. This script is designed to slice the images into the train, test, and valid sets according to specified ratios. Adjust the ratios as necessary in the Python file.
+1. Run the `yolo_slice_sort_windows.py` Python script provided in this repository. This script is designed to slice the images into the train, test, and valid sets according to specified ratios. Adjust the ratios as necessary in the Python file.
 
-   **Note:** This script has been tested on Ubuntu/Linux. If you are using Windows, you may need to modify the folder paths accordingly.
+   **Note:** This script has been tested on windows. If you are using linux, you may need to modify the folder paths accordingly. There is an old version of the script that I had written for linux, however it does not print out what it is doing and the user may need to debug. MAKE SURE ALL THE FILE EXTENSIONS ARE CORRECT!
 
 2. The script will generate separate folders for the train, test, and valid sets, containing the sliced images.
 
