@@ -57,6 +57,7 @@ bolt
 
 This can be renamed to <your_name_here>.yaml. The structure of this file could be as follows (for YOLOv8)
 ```
+path: /home/joe/Documents/fasteners/
 train: ./train/images
 val: ./valid/images
 test: ./test/images
